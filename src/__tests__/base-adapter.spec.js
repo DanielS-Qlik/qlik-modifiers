@@ -41,7 +41,7 @@ describe('measure-base-adapter', () => {
       };
       measure.qDef.qDef = '=RangeSum(Above(Avg(Sales), 0, 12))';
 
-      expect(measureBaseAdapter.getExpression(measure)).to.equal('');
+      expect(measureBaseAdapter.getExpression(measure)).to.equal('123');
     });
   });
 
